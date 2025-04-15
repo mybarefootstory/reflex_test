@@ -2,7 +2,7 @@
 
 
 import { Fragment, useCallback, useContext } from "react"
-import { Button as RadixThemesButton, Code as RadixThemesCode, Container as RadixThemesContainer, Flex as RadixThemesFlex, Heading as RadixThemesHeading, IconButton as RadixThemesIconButton, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
+import { Container as RadixThemesContainer, Flex as RadixThemesFlex, Heading as RadixThemesHeading, IconButton as RadixThemesIconButton, Link as RadixThemesLink } from "@radix-ui/themes"
 import { ColorModeContext, EventLoopContext } from "$/utils/context"
 import { Event, isTrue } from "$/utils/state"
 import { Moon as LucideMoon, Sun as LucideSun } from "lucide-react"
@@ -109,26 +109,8 @@ export default function Component() {
 
 <RadixThemesHeading size={"9"}>
 
-{"Welcome to Reflex GPT!"}
+{"Welcome to Reflex About!"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} size={"5"}>
-
-{"Get started by editing something like"}
-<RadixThemesCode>
-
-{"Reflex_GPT/Reflex_GPT.py"}
-</RadixThemesCode>
-</RadixThemesText>
-<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
-
-<NextLink href={"https://reflex.dev/docs/getting-started/introduction/"} passHref={true}>
-
-<RadixThemesButton>
-
-{"Check out our docs!"}
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
 </RadixThemesFlex>
 <RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })}>
 
@@ -139,7 +121,7 @@ export default function Component() {
 
 <title>
 
-{"ReflexGpt | Index"}
+{"ReflexGpt | About"}
 </title>
 <meta content={"favicon.ico"} property={"og:image"}/>
 </NextHead>
